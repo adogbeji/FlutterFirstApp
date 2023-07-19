@@ -11,6 +11,8 @@ void main() {
 }
 
 class GradientContainer extends StatelessWidget {
+  GradientContainer({key}): super(key: key);
+
   @override
   Widget build(context) {
     return Container(
