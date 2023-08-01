@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class GradientText extends StatelessWidget {
-  const GradientText({super.key});
+class StyledText extends StatelessWidget {
+  const StyledText({super.key});
   
   @override
   Widget build(context) {
