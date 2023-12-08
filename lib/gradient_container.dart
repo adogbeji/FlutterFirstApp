@@ -37,6 +37,9 @@ class GradientContainer extends StatelessWidget {
             ),
             TextButton(
               onPressed: rollDice,
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.white,
+              ),
               child: const Text('Roll Dice')
             ),
           ],
