@@ -4,10 +4,12 @@ const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer(this.startColour, this.endColour, {super.key});
+  GradientContainer(this.startColour, this.endColour, {super.key});
 
   final Color startColour;
   final Color endColour;
+
+  var activeDiceImage = 'assets/images/dice-2.png';
 
   void rollDice() {}
 
