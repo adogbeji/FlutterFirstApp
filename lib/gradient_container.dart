@@ -11,7 +11,10 @@ class GradientContainer extends StatelessWidget {
 
   var activeDiceImage = 'assets/images/dice-2.png';
 
-  void rollDice() {}
+  void rollDice() {
+    activeDiceImage = 'assets/images/dice-4.png';
+    print('Working!');
+  }
 
   @override
   Widget build(context) {
@@ -34,24 +37,26 @@ class GradientContainer extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
-              'assets/images/dice-2.png',
+              // 'assets/images/dice-2.png',
+              activeDiceImage,
               width: 200,
             ),
             const SizedBox(
               height: 20,
             ),
             TextButton(
-                onPressed: rollDice,
-                style: TextButton.styleFrom(
-                  padding: const EdgeInsets.only(
-                    top: 20,
-                  ),
-                  foregroundColor: Colors.white,
-                  textStyle: const TextStyle(
-                    fontSize: 28,
-                  ),
+              onPressed: rollDice,
+              style: TextButton.styleFrom(
+                padding: const EdgeInsets.only(
+                  top: 20,
                 ),
-                child: const Text('Roll Dice')),
+                foregroundColor: Colors.white,
+                textStyle: const TextStyle(
+                  fontSize: 28,
+                ),
+              ),
+              child: const Text('Roll Dice'),
+            ),
           ],
         ),
       ),
