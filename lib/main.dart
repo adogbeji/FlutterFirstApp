@@ -7,7 +7,7 @@ const endColour = Color.fromARGB(255, 176, 94, 191);
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
         body: GradientContainer(startColour, endColour),
       ),
